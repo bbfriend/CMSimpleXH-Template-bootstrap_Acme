@@ -7,10 +7,10 @@
 //  language : "%LANGUAGE%",
   plugins: [
     "advlist anchor autolink autosave charmap code contextmenu emoticons fullscreen hr",
-    "image importcss insertdatetime link lists media nonbreaking paste template",
+    "image importcss insertdatetime link lists media nonbreaking paste template preview sh4tinymce",
     "save searchreplace table textcolor visualblocks visualchars wordcount compat3x clear yomigana fontawesome noneditable"
   ],
-  toolbar1: "save | fullscreen code formatselect fontselect fontsizeselect styleselect template | ruby",
+  toolbar1: "save | fullscreen code formatselect fontselect fontsizeselect styleselect template | ruby | sh4tinymce | preview",
   toolbar2: "bold italic underline strikethrough | alignleft aligncenter alignright alignjustify cut copy paste pastetext | bullist numlist outdent indent blockquote | clearleft clearright clearboth fontawesome",
   toolbar3: "undo redo | link unlink anchor image media | hr nonbreaking removeformat visualblocks visualchars | forecolor backcolor | searchreplace | charmap",
   toolbar4: "emoticons subscript superscript | table inserttime help",
