@@ -28,7 +28,7 @@ ex.
         .....  
 4. Select, Admin > settings > CMS > Template    --> bsp_acme_Main  
    Select,your toppage Pagetemplate -->  bsp_acme_ForTop  
-5. IF you use tinymce's new init
+5. IF you use tinymce's new init  
    Select, Admin > plugins > tinymce > Config  > init --> bootstrap*  
     * if you use tinymce4, Admin > settings > CMS  Editor --> tinymce4  
       and select , tinymce4 > Config  > init --> bootstrap*
