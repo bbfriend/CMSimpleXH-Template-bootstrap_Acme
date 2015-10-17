@@ -32,7 +32,7 @@ ex.
    Select, Admin > plugins > tinymce > Config  > init --> bootstrap*  
     * if you use tinymce4, Admin > settings > CMS  Editor --> tinymce4  
       and select , tinymce4 > Config  > init --> bootstrap*  
-      * Caution! tinyMCE4CMSimple_XH(tinymce4.1.2.5) requires PHP ≥ 5.3
+      * :grey_exclamation: Caution! tinyMCE4CMSimple_XH(tinymce4.1.2.5) requires PHP ≥ 5.3
 
 
 
