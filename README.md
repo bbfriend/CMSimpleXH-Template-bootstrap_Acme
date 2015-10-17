@@ -10,7 +10,7 @@ Original Template : https://shapebootstrap.net/item/1524925-acme-free-responsive
  * plugin/tinymce/init/init_bootstrap.js  
    including Simple style :Responsive images ,+roundedc,+circle and other.  
  * plugin/tinymce/plugins/  clear and syntaxhl
- * plugin/tinymce4/** (tinymce4.1.2.5 http://cmsimpleforum.com/viewtopic.php?f=12&t=7017)  
+ * plugin/tinymce4/** (tinyMCE4CMSimple_XH:tinymce4.1.2.5  http://cmsimpleforum.com/viewtopic.php?f=12&t=7017)  
     including Simple template: columns set,tab,accodion  
     including Simple style :Responsive images ,+roundedc,+circle and other.  
     including TinyMCE-FontAwesome-Plugin Ver1.7.0  https://github.com/josh18/TinyMCE-FontAwesome-Plugin
@@ -31,7 +31,10 @@ ex.
 5. IF you use tinymce's new init  
    Select, Admin > plugins > tinymce > Config  > init --> bootstrap*  
     * if you use tinymce4, Admin > settings > CMS  Editor --> tinymce4  
-      and select , tinymce4 > Config  > init --> bootstrap*
+      and select , tinymce4 > Config  > init --> bootstrap*  
+      * Caution! tinyMCE4CMSimple_XH(tinymce4.1.2.5) requires PHP ≥ 5.3
+
+
 
 :exclamation:  
 "login Link" have only toppage(bsp_acme_ForTop) ,at the bottom right.  hiding in the same color  
