@@ -1,0 +1,383 @@
+<?php include $pth['folder']['template'].'bootstrap_menu.php'; 
+//fadeInLeft fadeInRight fadeInUP fadeInDOWN
+srand((float) microtime() * 10000000);
+$bb_anime = array("fadeInLeft", "fadeInRight", "fadeInUP", "fadeInDOWN");
+$bb_anime_keys = array_rand($bb_anime,2);
+
+$bb_editspase= ($adm && $edit) ? 'col-lg-10 col-lg-offset-1' : 'col-lg-8 col-lg-offset-2';
+?>
+<!DOCTYPE html>
+<html lang="<?php echo $sl;?>">
+  <head>
+    <?php echo head();?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<?php echo $pth['folder']['template']?>img/favicon.png">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+<script src="<?php echo $pth['folder']['template']?>js/html5shiv.js">
+</script>
+<script src="<?php echo $pth['folder']['template']?>js/respond.min.js">
+</script>
+<![endif]-->
+  </head>
+  <body id="body" <?php echo onload();?>>
+<!-- utf-8 check: äöüß -->
+    <!--header start-->
+    <header class="head-section navbar-fixed-top">
+      <div class="navbar navbar-default navbar-static-top container">
+          <div class="navbar-header">
+              <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
+              type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="."><?php echo utf8_substr(sitename(),0,1);?><span><?php echo utf8_substr(sitename(),1);?></span></a> 
+          </div>
+
+          <div class="navbar-collapse collapse">
+              <ul id="menu" class="nav navbar-nav">
+
+<?php echo bootstrap_li($hc,3);?>
+
+                  <li><?php echo bootstrap_searchbox();?></li>
+              </ul>
+          </div>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!--breadcrumbs start-->
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <h1>
+            <?php echo $title;?>
+            </h1>
+          </div>
+          <div class="col-lg-8 col-sm-8">
+            <ol class="breadcrumb pull-right">
+             <?php echo bootstrap_locator();?>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--breadcrumbs end-->
+
+    <!--container start-->
+    <div class="container">
+	    <div class="row mar-b-50">
+<? /***	        <div class="col-lg-8 col-lg-offset-2"> **/ ?>
+	        <div class="<?php echo $bb_editspase ?>">
+	            <?php echo editmenu();?>
+	            <div class="animated <?php echo $bb_anime[$bb_anime_keys[0]] ?>">
+	              <?php echo content();?>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="bg-lg">
+	      <div class="row mar-b-50">
+	        <div class="col-lg-8 col-lg-offset-2">
+	            <div class="ww <?php echo $bb_anime[$bb_anime_keys[1]] ?>">
+	              <?php echo submenu();?>
+	            </div>
+	        </div>
+	      </div>
+	    </div>
+    </div>
+    <!--container end-->
+
+
+    <!--footer start-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+            <h1>
+              contact info
+            </h1>
+            <address>
+              <p>
+                <i class="fa fa-home pr-10">
+                </i>
+                Company: <a href="http://www.u-tec.org" target="_blank">U-tec.org</a>
+              </p>
+              <p>
+                <i class="fa fa-globe pr-10">
+                </i>
+                <?php echo sitemaplink();?>
+              </p>
+              <p>
+                <i class="fa fa-mobile pr-10">
+                </i>
+                <?php echo printlink();?>
+              </p>
+              <p>
+                <i class="fa fa-phone pr-10">
+                </i>
+                Phone : 
+              </p>
+              <p>
+                <i class="fa fa-envelope pr-10">
+                </i>
+                Email :<?php echo mailformlink();?>
+              </p>
+            </address>
+          </div>
+          <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+            <h1>
+              latest tweet
+            </h1>
+            <div id="owl-slide">
+              <div class="tweet-box">
+                <i class="fa fa-twitter">
+                </i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">
+                    @example
+                  </a>
+                  for all future updates of us!
+                  <a href="javascript:;">
+                    twitter.com/acme
+                  </a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter">
+                </i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">
+                    @example
+                  </a>
+                  for all future updates of us!
+                  <a href="javascript:;">
+                    twitter.com/acme
+                  </a>
+                </em>
+              </div>
+              <div class="tweet-box">
+                <i class="fa fa-twitter">
+                </i>
+                <em>
+                  Please follow
+                  <a href="javascript:;">
+                    @example
+                  </a>
+                  for all future updates of us!
+                  <a href="javascript:;">
+                    twitter.com/acme
+                  </a>
+                </em>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+              <h1>
+                関連コンテンツ
+              </h1>
+              <ul class="page-footer-list">
+
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  
+                    Wiki（作成中）
+                  
+                </li>
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  <a href="/xh_so/">
+                    テーマのデモサイト
+                  </a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  <a href="/V404_old/" target="_blank">
+                    旧サイト
+                  </a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  <a href="http://www.cmsimple-xh.org/" target="_blank">
+                    本家　CMSimple_XH
+                  </a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  <a href="http://cmsimpleforum.com/" target="_blank">
+                    本家　フォーラム
+                  </a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right">
+                  </i>
+                  <a href="http://www.cmsimple-xh.org/wiki/" target="_blank">
+                    本家　Wiki
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+                <?php echo newsbox('News04');?>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!--small footer start -->
+    <footer class="footer-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 pull-right">
+                    <ul class="social-link-footer list-unstyled">
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".1s"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".2s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".3s"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".4s"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".5s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".6s"><a href="#"><i class="fa fa-skype"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".7s"><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".8s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="copyright">
+                    <p>&copy; <a href="https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template" target="_blank"> Acme Theme by cosmic.</a> <a href="http://www.cmsimple-xh.org/" target="_blank">Powered by CMSimple_XH</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--small footer end-->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+<?php if(!$adm){ ?>
+    <script src="js/jquery.js">
+    </script>
+<?php } ?>
+    <script src="<?php echo $pth['folder']['template']?>js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript" src="<?php echo $pth['folder']['template']?>js/hover-dropdown.js">
+    </script>
+    <script src="<?php echo $pth['folder']['template']?>assets/owlcarousel/owl.carousel.js">
+    </script>
+
+    <script type="text/javascript" src="<?php echo $pth['folder']['template']?>assets/bxslider/jquery.bxslider.js">
+    </script>
+    <script defer src="<?php echo $pth['folder']['template']?>js/jquery.flexslider.js">
+    </script>
+
+    <script src="<?php echo $pth['folder']['template']?>js/jquery.easing.min.js">
+    </script>
+    <script src="<?php echo $pth['folder']['template']?>js/link-hover.js">
+    </script>
+
+    <!--common script for all pages-->
+    <script src="<?php echo $pth['folder']['template']?>js/common-scripts.js">
+    </script>
+    <script src="<?php echo $pth['folder']['template']?>js/wow.min.js">
+    </script>
+    <script>
+      wow = new WOW(
+        {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // default
+          offset:       0          // default
+        }
+      )
+        wow.init();
+    </script>
+
+
+    <script>
+
+
+
+      $(window).load(function() {
+        $('[data-zlname = reverse-effect]').mateHover({
+          position: 'y-reverse',
+          overlayStyle: 'rolling',
+          overlayBg: '#fff',
+          overlayOpacity: 0.7,
+          overlayEasing: 'easeOutCirc',
+          rollingPosition: 'top',
+          popupEasing: 'easeOutBack',
+          popup2Easing: 'easeOutBack'
+        }
+                                                     );
+      }
+                    );
+
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider) {
+            $('body').removeClass('loading');
+          }
+        }
+                                   );
+      }
+                    );
+
+      $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+          items : 4,
+        }
+                                  );
+
+      }
+                       );
+
+
+
+
+      $(window).scroll(function() {
+        $('#skillz').each(function(){
+          var imagePos = $(this).offset().top;
+          var viewportheight = window.innerHeight;
+          console.log(viewportheight);
+          var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+viewportheight) {
+            $('.skill_bar').fadeIn('slow');
+            $('.skill_one').animate({
+              width:'60%'}
+                                    , 2000);
+            $('.skill_two').animate({
+              width:'90%'}
+                                    , 2000);
+            $('.skill_three').animate({
+              width:'70%'}
+                                      , 1000);
+            $('.skill_four').animate({
+              width:'55%'}
+                                     , 1000);
+            $('.skill_bar_progress p').fadeIn('slow',function(){
+
+            }
+                                             );
+          }
+        }
+                         );
+      }
+                      );
+
+
+    </script>
+
+  </body>
+</html>

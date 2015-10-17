@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#yomigana_dlg.qTitle}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="js/q.js"></script>
+	<link href="css/ruby.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="yomiganaManager.onLoad(yomiganaManager);">
+<form onsubmit="yomiganaManager.onSubmit(yomiganaManager);return false;" action="#">
+	<div class="tabs">
+		<ul>
+			<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#yomigana_dlg.qDesc}</a></span></li>
+		</ul>
+	</div>
+
+	<div class="panel_wrapper">
+		<div id="general_panel" class="panel current">
+			<table border="0" cellpadding="4" cellspacing="0">
+                    <tr>
+                        <td><label for="citeText">{#yomigana_dlg.qCite}</label></td>
+                        <td class="nowrap">
+                            <input id="citeText" name="citeText" type="text" value="" class="mceFocus" />
+                        </td>
+                    </tr>
+                    <tr style="text-align:right">
+                    	<td colspan="2"><input type="button" name="delete" id="delete" value="{#yomigana_dlg.deleteLabel}" onclick="yomiganaManager.onDelete(yomiganaManager);" disabled="disabled" /></td>
+                    </tr>
+            </table>
+		</div>
+	</div>
+
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="submit" id="insert" name="insert" value="{#insert}" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</form>
+</body>
+</html>

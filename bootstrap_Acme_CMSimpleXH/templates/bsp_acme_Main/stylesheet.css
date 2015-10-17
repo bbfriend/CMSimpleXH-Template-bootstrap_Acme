@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+Theme Name: Acme - Free Responsive Corporate Template
+Theme URI: http://web-apps.ninja/acme-corporate-responsive-template-free/
+Description:   
+Acme is a html5 corporate responsive template developed based on twitter bootstrap 3.x. It can be used as show case for your Business website. Our code is very structured and well organized so that it is very easier to maintain.
+Author: cosmic
+Author URI: 
+Tags: 
+    100% Responsive Design
+    Bootstrap 3 Compatible
+    Pricing Table
+    Login/Registration Page
+    Valid HTML5/CSS3 Markup
+    Third Level Menu Supported
+    Two Blog Layouts
+    3 and 4 Column Portfolio Layout
+    Google Fonts Support
+    Clean Code, All files are well commented and organized
+
+General comments and license statement: Free
+*/
+/* Bootstrap core CSS */
+@import url("css/bootstrap.min.css");
+@import url("css/theme.css");
+@import url("css/bootstrap-reset.css");
+/* external css */
+@import url("assets/font-awesome/css/font-awesome.css");
+@import url("css/flexslider.css");
+@import url("assets/bxslider/jquery.bxslider.css");
+@import url("css/animate.css");
+@import url("assets/owlcarousel/owl.carousel.css");
+@import url("assets/owlcarousel/owl.theme.css");
+@import url("css/superfish.css");
+ @import url(http://fonts.googleapis.com/css?family=Lato);
+
+/* Custom styles for this template */
+@import url("css/component.css");
+@import url("css/style.css");
+@import url("css/style-responsive.css");
+@import url("css/parallax-slider/parallax-slider.css");
