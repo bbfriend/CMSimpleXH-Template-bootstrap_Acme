@@ -45,3 +45,6 @@ ex.
 * Pagemanager(jstree): dnd(Drag & drop) is Shifts image.  
    CMSimple_XH is is not consider "position:relative"  
 * tinymce: Fullscree don't work.  
+  
+  
+Forum : http://cmsimpleforum.com/viewtopic.php?f=13&t=9347
