@@ -3,8 +3,10 @@ bootstrap(Responsive) Template for CMSimpleXH ,and Other.
 
 Original Template : https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template  
 
-## Ver2.2
+## Ver2.2.1  
+Enclosed to tinymce4/tinymce/plugins/tiny_bootstrap_elements_light/js
 
+## Ver2.2
 
 =======
 ## Ver2.1  
