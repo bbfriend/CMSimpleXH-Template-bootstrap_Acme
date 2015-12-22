@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Xh_Emoji</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css"><!--[if lte IE 7]>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="1F603.png" width="64" height="64"></a> 
+    <!-- end .header --></div>
+  <div class="title">
+    Xh_Emoji
+  </div>
+  <div class="desc">
+    <p>This plugin will enable you to use the open source <a href="http://emojione.com/" rel="nofollow">Emoji One</a> emoticons in your posts and pages. There are over 1100 emoticons for you to use.<br>
+      Xh_Emoji was modified the <a href="https://ja.wordpress.org/plugins/wp-emoji-one/" target="_blank">WP Emoji One</a> for the XH  . <br>
+    <span lang="en"></span></p>
+  </div>
+  <div class="clearfloat"></div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="help.htm#notice">Important Notice</a></li>
+        <li><a href="help.htm#requirements">Requirements</a></li>
+        <li><a href="help.htm#installation">Installation</a></li>
+        <li><a href="help.htm#settings">Settings</a></li>
+        <li><a href="help.htm#usage">Usage</a></li>
+        <li><a href="help.htm#limitations">Limitations</a></li>
+        <li><a href="help.htm#license">License</a></li>
+        <li><a href="help.htm#filelist">File List</a></li></ul>
+  <!-- end .sidebar1 --></div>
+  <div class="content">
+    <div id="body">
+      <p><strong>Please do read this documentation, <em>before</em> you encounter any problems!</strong></p>
+      <h2><a name="notice">Important Notice</a></h2>
+      <p><strong>The current version is merely a draft. Everything might change, and  there may be severe bugs and limitations as it is barely tested. It is a so  called alpha version. Use with utmost caution!</strong></p>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="requirements">Requirements</a></h2>
+      <p>XH_Emoji is a plugin for CMSimple_XH.  <br>
+      It requires a ...first set!!</p>
+      <ul>
+        <li><strong>TinyMCE4</strong> : <a href="http://sourceforge.net/projects/tinymce4cmsimplexh/files/" target="_blank">tinyMCE4CMSimple_XH</a>   ( <a href="http://cmsimpleforum.com/viewtopic.php?f=12&t=7017" target="_blank">Forum</a> )</li>
+        <li><strong>TinyMCE4's <a href="http://www.tinymce.com/wiki.php/Plugin:compat3x" target="_blank">Plugin:compat3x</a></strong></li>
+      </ul>
+      <p>&nbsp;</p>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="installation">Installation</a></h2>
+      <p>The installation is done as with many other CMSimple_XH plugins.  See the <a href="http://www.cmsimple-xh.org/wiki/doku.php/installation"> CMSimple_XH wiki</a> for further details.</p>
+      <ol>
+        <li><strong>Backup the data on your server.</strong></li>
+        <li>Unzip the distribution on your computer.</li>
+        <li>Upload the whole directory  to your server into the  CMSimple_XH directory.        </li>
+        <ul>
+          <li>plugins /xh_emoji     -----&gt;&nbsp;&nbsp;plugins/xh_emoji</li>
+          <li>plugins/tinymce4 -----&gt;&nbsp;&nbsp;&nbsp;plugins/tinymce4</li>
+          <li>userfile/emoji&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---  &gt;&nbsp;&nbsp;&nbsp;userfile/emoji<br>
+          </li>
+        </ul>
+        <li>Set write permissions for the plugins/xh_emoji's <br>
+          config/, css/ und  languages/.</li>
+      </ol>
+      <h4>&nbsp;</h4>
+      <h4>For tinyMCE:</h4>
+      <ol>
+        <li>Edit your <a href="http://www.cmsimple-xh.org/wiki/doku.php/tinymce#customization">init_*.js</a>:  add the "xh_emoji" plugin to "plugins" and add the "xh_emoji" button to  "toolbarN" wherever you prefer.</li>
+      </ol>
+      <h4>&nbsp;</h4>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="settings">Settings</a></h2>
+      <p>Select "Xh_emoji" from "Plugins".</p>
+      <ol>
+        <li>"Config".  select
+          <ol>
+            <li><strong>Lang</strong> ....sorry</li>
+            <li>if you change icon folder, set<strong> Icon path</strong><br>
+            default: userfiles/images/emoji/</li>
+          </ol>
+        </li>
+        <li>"Language" select ,set your <span id="result_box" lang="en">Translation</span>.<br>
+          <span id="result_box2" lang="en">*This is displayed in a pop-up window</span> <br>
+        </li>
+      </ol>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="usage">Usage</a></h2>
+      <p><img src="xh_emoji01.gif" width="597" height="163"></p>
+      <p><img src="xh_emoji02.gif" width="579" height="408"></p>
+      <p><img src="xh_emoji03.gif" width="586" height="369"></p>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="limitations">Limitations</a></h2>
+      <p>tinyMCE may not work at all when CMSimple_XH is set to any other language  than English. As a workaround just make a copy of  plugins/tinymce/tiny_mce/plugins/syntaxhl/langs/en.js and call it according to  your language (e.g. de.js for German).</p>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2><a name="license">License</a></h2>
+      <ul>
+        <li>Art License Terms<br>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License</a> . <em>Detail <a href="http://emojione.com/" target="_blank">http://emojione.com/</a></em><a href="http://emojione.com/" target="_blank"></a></li>
+        <li>Software License terms<br>
+         <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GPLv3</a>.</li>
+      </ul>
+      <p>© 2015 T. Uchiyama</p>
+      <div>
+        <div align="right"><a href="help.htm#">back to top</a></div>
+      </div>
+      <h2>&nbsp;</h2>
+      <div></div>
+    </div>
+    <h1><a id="filelist"></a>File List</h1>
+    <p class="filelist">Folder:18 ,File:1,217 </p>
+    <p class="filelist">xh_emoji<br>├&nbsp;plugins<br>│&nbsp;├&nbsp;tinymce4<br>│&nbsp;│&nbsp;└&nbsp;tinymce<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;plugins<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;xh_emoji<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;img<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;wp-emoji-icon.png<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;langs<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;cs.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;da.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;de.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;en.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;es.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;et.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;fr.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;hu.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;it.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;ja.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;nl.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;pl.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;pt.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;ru.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;sk.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;tw.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;zh.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;InsertEmoji.dev.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;InsertEmoji.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;plugin.js<br>│&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;plugin.min.js<br>│&nbsp;└&nbsp;xh_emoji<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;config<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;config.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;metaconfig.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;css<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;style.css<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;style.min.css<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;help<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;help.htm<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;stylesheet.css<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;img<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;apple.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;bow.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;car.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;clock.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;emojione-icons.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;emojione-sprites.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;flower.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;megaphone.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;other.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;smiley.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;swim.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;wp-emoji-icon.png<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;languages<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;default.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;├&nbsp;en.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;└&nbsp;ja.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;admin.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;index.php<br>│&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;popup.php<br>└&nbsp;userfiles<br>&nbsp;&nbsp;&nbsp;└&nbsp;images<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;emoji<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└&nbsp;icons<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├&nbsp;0023-20E3.png<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├.....<br>
+      <br>
+      <br>
+    </p>
+    <p></p>
+    <p>&nbsp;</p>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p align="center"><a href="http://cmsimple-jp.org" target="_blank">CMSimple-jp.org</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

@@ -1,0 +1,788 @@
+@charset "utf-8";
+.phpDocumentor a {
+    background-color: transparent;
+    color: #636331;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+.phpDocumentor a:hover {
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.phpDocumentor a.menu {
+    background-color: transparent;
+    color: #636331;
+}
+.phpDocumentor dd {
+    margin-left: 0;
+    padding-left: 1em;
+}
+.phpDocumentor div.credit {
+    font-size: 8pt;
+    text-align: center;
+}
+.phpDocumentor div.description, .phpDocumentor div.tags, .phpDocumentor div.function {
+    padding-left: 15px;
+}
+.phpDocumentor div.header-top-right-subpackage {
+    background-color: #fdfcf2;
+    color: #636331;
+    font-size: 12pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: right;
+}
+.phpDocumentor div.package {
+    padding-left: 5px;
+}
+.phpDocumentor div.warning {
+    background-color: transparent;
+    color: #ff0000;
+}
+.phpDocumentor hr {
+    border-bottom-color: #ccc9a4;
+    border-bottom-style: solid;
+    border-left-color: #ccc9a4;
+    border-left-style: solid;
+    border-right-color: #ccc9a4;
+    border-right-style: solid;
+    border-top-color: #ccc9a4;
+    border-top-style: solid;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.phpDocumentor li {
+    list-style-type: square;
+}
+.phpDocumentor td {
+    font-size: 10pt;
+    vertical-align: top;
+}
+.phpDocumentor td.class-overview {
+    padding-bottom: 2px;
+    padding-left: 1em;
+    padding-right: 2px;
+    padding-top: 2px;
+}
+.phpDocumentor td.code {
+    background-color: #ccc9a4;
+    color: #000000;
+    padding-left: 3em;
+    padding-right: 1em;
+    text-indent: -2em;
+}
+.phpDocumentor td.code-border {
+    background-color: #636331;
+    color: #000000;
+}
+.phpDocumentor td.header-line {
+    background-color: #636331;
+    color: #ffffff;
+}
+.phpDocumentor td.header-menu {
+    background-color: #ccc9a4;
+    color: #636331;
+    font-size: 8pt;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 5px;
+    padding-top: 2px;
+    text-align: right;
+}
+.phpDocumentor td.header-top-left {
+    background-color: #fdfcf2;
+    color: #636331;
+    font-size: 16pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+.phpDocumentor td.header-top-right {
+    background-color: #fdfcf2;
+    color: #636331;
+    font-size: 16pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: right;
+}
+.phpDocumentor td.indent {
+    padding-left: 1em;
+}
+.phpDocumentor td.menu {
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 2px;
+    padding-top: 2px;
+}
+.phpDocumentor td.type, .phpDocumentor .folder-title, .phpDocumentor .method-result, .include-type {
+    font-style: italic;
+}
+.phpDocumentor ul {
+    margin-left: 0;
+    padding-left: 8px;
+    vertical-align: top;
+}
+.phpDocumentor .class-name {
+    color: #000000;
+    font-weight: bold;
+}
+.class-table {
+    width: 100%;
+}
+.phpDocumentor .class-table-header {
+    border-bottom-color: #666666;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    text-align: left;
+}
+.phpDocumentor .const-title {
+}
+.phpDocumentor .description {
+    color: #000000;
+}
+.phpDocumentor .detail, .phpDocumentor div.top, .phpDocumentor span.smalllinenumber {
+    font-size: 8pt;
+}
+.phpDocumentor .disabled {
+    color: #ccc9a4;
+    font-style: italic;
+}
+.phpDocumentor .evenrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: #ccc9a4;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ccc9a4;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ccc9a4;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #ccc9a4;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #000000;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+.phpDocumentor .include-title {
+}
+.phpDocumentor .index-item-body {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+.phpDocumentor .index-item-description {
+    margin-top: 0.25em;
+}
+.phpDocumentor .index-item-details {
+    font-size: 8pt;
+    font-style: italic;
+    font-weight: normal;
+}
+.phpDocumentor .index-letter {
+    font-size: 12pt;
+}
+.phpDocumentor .index-letter-menu {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+.phpDocumentor .index-letter-section {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ccc9a4;
+    border-bottom-color: #636331;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #636331;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    border-right-color: #636331;
+    border-right-style: dotted;
+    border-right-width: 1px;
+    border-top-color: #636331;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+.phpDocumentor .index-letter-title {
+    font-size: 12pt;
+    font-weight: bold;
+}
+.phpDocumentor .info-box {
+}
+.phpDocumentor .info-box-body {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-bottom-color: #ccc9a4;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ccc9a4;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ccc9a4;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #ccc9a4;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+.phpDocumentor .info-box-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ccc9a4;
+    border-bottom-color: #636331;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #636331;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #636331;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #636331;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #636331;
+    font-size: 14pt;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.25em;
+}
+.phpDocumentor .line-number, .phpDocumentor .var-name-summary {
+    font-size: 8pt;
+    font-weight: bold;
+}
+.phpDocumentor .method-definition {
+    font-size: 8pt;
+    margin-bottom: 0.3em;
+    padding-left: 1em;
+}
+.phpDocumentor .method-definition {
+    font-size: 8pt;
+    margin-bottom: 0.3em;
+}
+.phpDocumentor .method-header {
+}
+.phpDocumentor .method-result {
+    color: #636331;
+    font-size: 8pt;
+    font-style: italic;
+}
+.phpDocumentor .method-signature {
+    color: #ccc9a4;
+    font-size: 85%;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.5em;
+}
+.phpDocumentor .nav-bar {
+    font-size: 8pt;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.2em;
+    text-align: right;
+    white-space: nowrap;
+}
+.phpDocumentor .nav-button:active, .phpDocumentor .nav-button:focus, .phpDocumentor .nav-button:hover {
+    background-color: #dddddd;
+    outline-color: #999999;
+    outline-style: solid;
+    outline-width: 1px;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+.phpDocumentor .nav-button-disabled {
+    color: #999999;
+}
+.phpDocumentor .notes {
+    font-size: 8pt;
+    font-style: italic;
+}
+.phpDocumentor .oddrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fdfcf2;
+    border-bottom-color: #ccc9a4;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ccc9a4;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ccc9a4;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #ccc9a4;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: #000000;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+.phpDocumentor .package {
+    font-size: 9pt;
+    padding-left: 2em;
+}
+.phpDocumentor .package-details {
+    font-size: 85%;
+}
+.phpDocumentor .package-title {
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.phpDocumentor .page-body {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    max-width: 800px;
+}
+.phpDocumentor .parameters {
+    list-style-type: square;
+    margin-bottom: 0;
+    margin-left: 3em;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-left: 0;
+    vertical-align: top;
+}
+.phpDocumentor .redefinitions {
+    font-size: 8pt;
+    margin-left: 2em;
+    padding-left: 0;
+}
+.phpDocumentor .separator {
+    background-color: #ccc9a4;
+    height: 1px;
+}
+.phpDocumentor .short-description {
+    color: #636331;
+    font-weight: bold;
+}
+.phpDocumentor .src-code li, .phpDocumentor .php-src li, .phpDocumentor .php li, .phpDocumentor .listing li {
+    list-style-type: decimal;
+}
+.phpDocumentor .php-src {
+    font-family: "Courier New",Courier,monospace;
+    font-weight: normal;
+}
+.phpDocumentor .sub-package {
+    font-size: 120%;
+    font-weight: bold;
+}
+.phpDocumentor .tags {
+    color: #636331;
+    list-style-type: square;
+    margin-bottom: 0;
+    margin-left: 3em;
+    margin-right: 1em;
+    margin-top: 0;
+    padding-left: 0;
+    vertical-align: top;
+}
+.phpDocumentor .tree dl {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+.phpDocumentor .tutorial {
+    border-bottom-color: #0066ff;
+    border-bottom-width: thin;
+    border-left-color: #0066ff;
+    border-left-width: thin;
+    border-right-color: #0066ff;
+    border-right-width: thin;
+    border-top-color: #0066ff;
+    border-top-width: thin;
+}
+.phpDocumentor .tutorial-nav-box {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fdfcf2;
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #999999;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #999999;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #999999;
+    border-top-style: solid;
+    border-top-width: 1px;
+    width: 100%;
+}
+.phpDocumentor .var-default {
+}
+.phpDocumentor .var-summary-description {
+    color: #000000;
+    font-size: 8pt;
+    font-weight: normal;
+}
+.phpDocumentor .var-description {
+    color: #000000;
+    font-weight: normal;
+}
+.phpDocumentor .var-header {
+}
+.phpDocumentor .var-name, .phpDocumentor .const-name, .phpDocumentor .method-title, .phpDocumentor .method-name, .include-name, .phpDocumentor .var-name, .phpDocumentor .field {
+    font-weight: bold;
+}
+.phpDocumentor .var-summary, .phpDocumentor .method-summary {
+    font-size: 8pt;
+}
+.phpDocumentor .var-title {
+    margin-bottom: 0.3em;
+}
+.phpDocumentor .var-type {
+    color: #636331;
+    font-style: italic;
+}
+.phpDocumentor .var-type-summary {
+    color: #636331;
+    font-size: 8pt;
+    font-style: italic;
+    padding-left: 1em;
+}
+.phpDocumentor .warning {
+    color: #ff6600;
+}
+.phpDocumentor .src-code {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    border-bottom-color: #ccc9a4;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #ccc9a4;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ccc9a4;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: #ccc9a4;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-family: "Courier New",Courier,monospace;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+.phpDocumentor .src-line {
+    font-family: "Courier New",Courier,monospace;
+    font-weight: normal;
+}
+.phpDocumentor .src-comm {
+    color: green;
+}
+.src-id {
+}
+.phpDocumentor .src-inc {
+    color: #0000ff;
+}
+.phpDocumentor .src-key {
+    color: #0000ff;
+}
+.phpDocumentor .src-num {
+    color: #cc0000;
+}
+.phpDocumentor .src-str {
+    color: #66cccc;
+}
+.phpDocumentor .src-sym {
+    font-weight: bold;
+}
+.phpDocumentor .src-var {
+}
+.phpDocumentor .src-php {
+    font-weight: bold;
+}
+.phpDocumentor .src-doc {
+    color: #009999;
+}
+.phpDocumentor .src-doc-close-template {
+    color: #0000ff;
+}
+.phpDocumentor .src-doc-coretag {
+    color: #0099ff;
+    font-weight: bold;
+}
+.phpDocumentor .src-doc-inlinetag {
+    color: #0099ff;
+}
+.phpDocumentor .src-doc-internal {
+    color: #6699cc;
+}
+.phpDocumentor .src-doc-tag {
+    color: #0080cc;
+}
+.phpDocumentor .src-doc-template {
+    color: #0000ff;
+}
+.phpDocumentor .src-doc-type {
+    font-style: italic;
+}
+.phpDocumentor .src-doc-var {
+    font-style: italic;
+}
+.phpDocumentor .tute-tag {
+    color: #009999;
+}
+.phpDocumentor .tute-attribute-name {
+    color: #0000ff;
+}
+.phpDocumentor .tute-attribute-value {
+    color: #0099ff;
+}
+.phpDocumentor .tute-entity {
+    font-weight: bold;
+}
+.phpDocumentor .tute-comment {
+    font-style: italic;
+}
+.phpDocumentor .tute-inline-tag {
+    color: #636311;
+    font-weight: bold;
+}
+.phpDocumentor .authors {
+}
+.phpDocumentor .author {
+    font-style: italic;
+    font-weight: bold;
+}
+.phpDocumentor .author-blurb {
+    font-size: 85%;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0.5em;
+    margin-left: 2em;
+    margin-right: 0;
+    margin-top: 0.5em;
+}
+.phpDocumentor .example {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #eeeeee;
+    border-bottom-color: #999999;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #999999;
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-right-color: #999999;
+    border-right-style: dashed;
+    border-right-width: 1px;
+    border-top-color: #999999;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+.phpDocumentor .listing {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #eeeeee;
+    border-bottom-color: #999999;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #999999;
+    border-left-style: dashed;
+    border-left-width: 1px;
+    border-right-color: #999999;
+    border-right-style: dashed;
+    border-right-width: 1px;
+    border-top-color: #999999;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    white-space: nowrap;
+}
+.phpDocumentor .release-info {
+    font-size: 85%;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+}
+.phpDocumentor .ref-title-box {
+}
+.phpDocumentor .ref-title {
+}
+.phpDocumentor .ref-purpose {
+    color: #666666;
+    font-style: italic;
+}
+.phpDocumentor .ref-synopsis {
+}
+.phpDocumentor .title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fdfcf2;
+    border-bottom-color: #999999;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: #999999;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-color: #999999;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: #999999;
+    border-top-style: solid;
+    border-top-width: 2px;
+    color: #636331;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.25em;
+}
+.phpDocumentor .cmd-synopsis {
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+}
+.phpDocumentor .cmd-title {
+    font-weight: bold;
+}
+.phpDocumentor .toc {
+    margin-left: 2em;
+    padding-left: 0;
+}
+.phpDocumentor .var-name, .phpDocumentor .const-name, .method-title, .phpDocumentor .method-name, .phpDocumentor .var-name, .field {
+    font-size: 14pt;
+}

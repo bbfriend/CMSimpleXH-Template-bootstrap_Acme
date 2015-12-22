@@ -1,11 +1,21 @@
-# CMSimpleXH-Template-bootstrap_Acme
+# CMSimpleXH-Template-bootstrap_Acme (Try Version)
 bootstrap(Responsive) Template for CMSimpleXH ,and Other.
 
 Original Template : https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template  
 
-## Ver2.0  (Try Version)
-* for CMSimple_XH (testing Ver.1.6.7)   
+## Ver2.2
 
+
+## Ver2.1  
+* FIX : Drop down menu :templates/bsp_acme_Main/template.htm  
+* Add syntaxhl Plugin plugins/syntaxhighlighter  
+* New tinymce4 init (Add syntaxhighlighter) : http://lab.nomadonweb.com/en/sh4tinymce   
+    plugins/tinymce4/inits/init_bootstrapTm4Ja.js  
+    plugins/tinymce4/inits/init_bootstrapTm4.js  
+
+
+#### Ver2.0  (First )
+* for CMSimple_XH (testing Ver.1.6.7)   
 * Including
  * plugin/tinymce/init/init_bootstrap.js  
    including Simple style :Responsive images ,+roundedc,+circle and other.  
@@ -39,12 +49,12 @@ ex.
 :exclamation:  
 "login Link" have only toppage(bsp_acme_ForTop) ,at the bottom right.  hiding in the same color  
   IF you lost "login Link" , Direct Access http://your cmsimle/&login
-  
+
 ### has been found Failure :cry:
 * Unstable operation of the Admin menu  
 * Pagemanager(jstree): dnd(Drag & drop) is Shifts image.  
    CMSimple_XH is is not consider "position:relative"  
 * tinymce: Fullscree don't work.  
-  
-  
+
+
 Forum : http://cmsimpleforum.com/viewtopic.php?f=13&t=9347

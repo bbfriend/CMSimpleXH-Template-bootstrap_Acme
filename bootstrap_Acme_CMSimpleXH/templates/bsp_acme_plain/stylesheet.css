@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*
+Theme Name: Child :Acme For phpDocumentor
+Main Theme : bsp_acme_Main
+*/
+
+/* Bootstrap core CSS */
+@import url("../bsp_acme_Main/css/bootstrap.min.css");
+@import url("../bsp_acme_Main/css/theme.css");
+@import url("../bsp_acme_Main/css/bootstrap-reset.css");
+/* external css */
+@import url("../bsp_acme_Main/assets/font-awesome/css/font-awesome.css");
+@import url("../bsp_acme_Main/css/flexslider.css");
+@import url("../bsp_acme_Main/assets/bxslider/jquery.bxslider.css");
+@import url("../bsp_acme_Main/css/animate.css");
+@import url("../bsp_acme_Main/assets/owlcarousel/owl.carousel.css");
+@import url("../bsp_acme_Main/assets/owlcarousel/owl.theme.css");
+@import url("../bsp_acme_Main/css/superfish.css");
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/* Custom styles for this template */
+@import url("../bsp_acme_Main/css/component.css");
+@import url("../bsp_acme_Main/css/style.css");
+@import url("../bsp_acme_Main/css/style-responsive.css");
+
+/* Child Custom styles for this template */
+/* Example Read phpDocumentor's style of http://www.cmsimple-xh.org/dev-doc/php/
+@import url("css/phpDocumentor/style.css"); */

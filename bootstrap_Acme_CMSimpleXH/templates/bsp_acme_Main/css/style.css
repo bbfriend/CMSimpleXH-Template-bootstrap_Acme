@@ -802,10 +802,34 @@ ul.about-flex-slides { margin-left: 0 }
 }
 .breadcrumbs {
     background: #34495e;
+    background-image: url('./breadcrumbs/snow1.png'), url('./breadcrumbs/snow2.png'), url('./breadcrumbs/snow3.png');
+    animation: snow 20s linear infinite;
+    -webkit-animation: snow 20s linear infinite;/*chrome&safari*/
+    -moz-animation: snow 20s linear infinite;/*firefox*/
+    -ms-animation: snow 20s linear infinite;/*ie*/
     color: #fff;
 /*    padding: 30px 0;*/
     padding: 130px 0 30px;
     margin-bottom: 40px;
+}
+@keyframes snow {
+ 0% {background-position: 0 0, 0 0, 0 0;}
+ 100% {background-position: 500px 500px, 300px 300px, 400px 400px;}
+}
+/*chrome&safari*/
+@-webkit-keyframes snow {
+ 0% {background-position: 0 0, 0 0, 0 0;}
+ 100% {background-position: 500px 500px, 300px 300px, 400px 400px;}
+}
+/*firefox*/
+@-moz-keyframes snow {
+ 0% {background-position: 0 0, 0 0, 0 0;}
+ 100% {background-position: 500px 500px, 300px 300px, 400px 400px;}
+}
+/*ie*/
+@-ms-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 500px, 300px 300px, 400px 400px;}
 }
 .breadcrumb {
     margin-bottom: 0;
@@ -1412,7 +1436,9 @@ ul.page-footer-list li i { padding-right: 10px }
 }
 .h-service-content p {
     text-align: center;
-    padding: 5px 21px 20px;
+/*    padding: 5px 21px 20px; */
+    padding-left: 21px;
+    padding-right: 21px;
 }
 .h-service-content a {
     color: #e74c3c;
@@ -2190,6 +2216,14 @@ ol.unstyled {
         margin: 0px 5px;
         width: 20px;
         height: 20px;
+    }
+    .dropdown-menu { /** Add cmsimple-jp.org **/
+       display: block !important ;
+       float: none;
+       position: static;
+    }
+    .dropdown-menu [class *= "dropdown"]{
+       padding-left: 25px;
     }
 }
 #filters {
@@ -3010,10 +3044,35 @@ div.header h3{
     margin-top: 0;
     text-transform: uppercase;
 }
-.h-service-content p {
+/*.h-service-content p {
     padding-bottom: initial;
+}*/
+ .bootstrap_popover{
+	color: #39B3D7;
+}
+.bootstrap_popover_mark{
+	padding-right: 5px;
 }
   /** for Syntaxhighlighter_XH **/
 .syntaxhighlighter .container::before, .syntaxhighlighter .container::after {
     display: block;
+}
+ul{
+    padding-left: 40px;
+}
+  /** for Iframe Responsive **/
+.video-wrap {
+  position: relative;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  padding-top: 69px;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }

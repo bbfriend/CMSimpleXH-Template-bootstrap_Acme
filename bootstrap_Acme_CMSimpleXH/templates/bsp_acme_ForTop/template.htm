@@ -1,13 +1,19 @@
 <?php
-  $bootstrap_main_folder = './templates/bsp_acme_Main/';
-  include $bootstrap_main_folder.'bootstrap_menu.php'; 
+$bootstrap_main_folder = './templates/bsp_acme_Main/';
+include $bootstrap_main_folder.'bootstrap_menu.php'; 
 
-  $bb_editspase= ($adm && $edit) ? 'col-lg-10 col-lg-offset-1' : 'col-lg-8 col-lg-offset-2';
+if($adm && $edit){
+	$bb_editspase = 'col-lg-10 col-lg-offset-1';
+	$read_tinymce_style = '<link rel="stylesheet" href="'. $bootstrap_main_folder .'for_tinymce/style.css">';
+}else{
+	$bb_editspase = 'col-lg-8 col-lg-offset-2';
+	$read_tinymce_style ='';
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $sl;?>">
   <head>
-    <?php echo head();?>
+    <?php echo head();?><?php echo $read_tinymce_style;?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="<?php echo $bootstrap_main_folder?>js/parallax-slider/modernizr.custom.28468.js">
     </script>
@@ -443,6 +449,31 @@
     <script src="<?php echo $bootstrap_main_folder?>js/common-scripts.js">
     </script>
 
+
+    <script src="<?php echo $bootstrap_main_folder?>js/jquery.magnific-popup.js">
+    </script>
+    <script>
+    $( document ).ready(function() {
+       $('.zoom').each(function(){
+            $(this).magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+		  verticalFit: true
+		},
+		zoom: {
+		  enabled: true,
+		 duration: 300 // don't foget to change the duration also in CSS
+		}
+              })
+        });
+    });
+    </script>
+
+
     <script type="text/javascript">
       jQuery(document).ready(function() {
 
@@ -495,6 +526,9 @@
       new WOW().init();
 
 
+    </script>
+    <script>
+	$("span[data-toggle=popover]").popover()
     </script>
   </body>
 </html>

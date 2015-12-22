@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ * Read at the time of execution of TinyMCE (edit)
+ * Ver0.1 
+ * @CMSimple-jp.org 
+*/
+.navbar-fixed-top, .navbar-fixed-bottom{
+  position: static;
+}
+.form-control, .breadcrumbs, .navbar-brand, .footer-small, .footer,
+.container .bg-lg,
+body>.da-slider{
+  display: none;
+}
+header .container{
+  max-width:initial;
+}
+.head-section .navbar-nav > li {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+@media (max-width: 768px) {
+  .navbar-toggle{
+    display: block;
+  }
+
+}
+/** Full screen **/
+body.mce-fullscreen {
+  background-color: #f0f0f0;
+}
+body.mce-fullscreen div [class*="col-"]{
+  margin:0;
+  width: auto;
+  float: none;
+}
+/** #body.mce-fullscreen #xh_adminmenu_fixed {
+    position: static;
+}**/
+#body.mce-fullscreen .navbar-fixed-top,
+#body.mce-fullscreen #xh_pdtabs,
+#body.mce-fullscreen #xh_pdviews,
+#body.mce-fullscreen > div:not(.container):not([class*="mce-"]){
+  display: none;
+}
+#body.mce-fullscreen .container {
+  max-width: 100%;
+}

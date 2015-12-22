@@ -22,6 +22,17 @@ Main Theme : bsp_acme_Main
 @import url("../bsp_acme_Main/css/component.css");
 @import url("../bsp_acme_Main/css/style.css");
 @import url("../bsp_acme_Main/css/style-responsive.css");
+@import url("../bsp_acme_Main/css/magnific-popup.css");
 
 /* Child Custom styles for this template */
 @import url("css/parallax-slider/parallax-slider.css");
+
+/*
+ *Read at the time of execution of TinyMCE (edit) fullscreen.
+ * Common stylesheet : ../bsp_acme_Main/for_tynymce/style.css
+ *  Use : body.mce-fullscreen selector: style ;
+
+body.mce-fullscreen #home-services,
+body.mce-fullscreen > .hr{
+  display: none;
+}*/

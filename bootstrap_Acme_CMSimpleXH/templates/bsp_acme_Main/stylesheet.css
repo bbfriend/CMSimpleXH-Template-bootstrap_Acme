@@ -32,10 +32,11 @@ General comments and license statement: Free
 @import url("assets/owlcarousel/owl.carousel.css");
 @import url("assets/owlcarousel/owl.theme.css");
 @import url("css/superfish.css");
- @import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 /* Custom styles for this template */
 @import url("css/component.css");
 @import url("css/style.css");
 @import url("css/style-responsive.css");
-@import url("css/parallax-slider/parallax-slider.css");
+/* @import url("css/parallax-slider/parallax-slider.css"); */
+@import url("css/magnific-popup.css");

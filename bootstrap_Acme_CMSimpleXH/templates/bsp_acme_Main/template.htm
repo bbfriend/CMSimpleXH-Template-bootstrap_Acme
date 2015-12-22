@@ -4,12 +4,33 @@ srand((float) microtime() * 10000000);
 $bb_anime = array("fadeInLeft", "fadeInRight", "fadeInUP", "fadeInDOWN");
 $bb_anime_keys = array_rand($bb_anime,2);
 
-$bb_editspase= ($adm && $edit) ? 'col-lg-10 col-lg-offset-1' : 'col-lg-8 col-lg-offset-2';
+if($adm){
+	$bb_editspase = 'col-lg-10 col-lg-offset-1';
+	$read_tinymce_style = '';
+	$now_xhpages_style ='';
+	if($edit){
+		$read_tinymce_style = '<link rel="stylesheet" href="'. $pth['folder']['template'] .'for_tinymce/style.css">';
+	}else if($xhpages){
+		$now_xhpages_style = <<< EOM
+<style type="text/css">
+<!--
+body {
+	position: static !important;
+}
+-->
+</style>
+EOM;
+	}
+}else{
+	$bb_editspase = 'col-lg-8 col-lg-offset-2';
+	$read_tinymce_style='';
+	$now_xhpages_style ='';
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $sl;?>">
   <head>
-    <?php echo head();?>
+    <?php echo head();?><?php echo $read_tinymce_style; echo $now_xhpages_style;?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo $pth['folder']['template']?>img/favicon.png">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -289,6 +310,40 @@ $bb_editspase= ($adm && $edit) ? 'col-lg-10 col-lg-offset-1' : 'col-lg-8 col-lg-
     <!--common script for all pages-->
     <script src="<?php echo $pth['folder']['template']?>js/common-scripts.js">
     </script>
+
+    <script src="<?php echo $pth['folder']['template']?>js/jquery.magnific-popup.js">
+    </script>
+    <script>
+    $( document ).ready(function() {
+       $('.zoom2').each(function(){
+            $(this).magnificPopup({
+                    type:'image',
+                    removalDelay: 300,
+                    mainClass: 'mfp-fade'
+               })
+        });
+    });
+    $( document ).ready(function() {
+       $('.zoom').each(function(){
+            $(this).magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+		  verticalFit: true
+		},
+		zoom: {
+		  enabled: true,
+		 duration: 300 // don't foget to change the duration also in CSS
+		}
+              })
+        });
+    });
+    </script>
+
+
     <script src="<?php echo $pth['folder']['template']?>js/wow.min.js">
     </script>
     <script>
@@ -375,9 +430,9 @@ $bb_editspase= ($adm && $edit) ? 'col-lg-10 col-lg-offset-1' : 'col-lg-8 col-lg-
                          );
       }
                       );
-
-
     </script>
-
+    <script>
+       $("span[data-toggle=popover]").popover()
+     </script>
   </body>
 </html>
