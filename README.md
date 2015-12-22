@@ -3,9 +3,12 @@ bootstrap(Responsive) Template for CMSimpleXH ,and Other.
 
 Original Template : https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template  
 
+<<<<<<< HEAD
 ## Ver2.2
 
 
+=======
+>>>>>>> origin/master
 ## Ver2.1  
 * FIX : Drop down menu :templates/bsp_acme_Main/template.htm  
 * Add syntaxhl Plugin plugins/syntaxhighlighter  
@@ -14,7 +17,11 @@ Original Template : https://shapebootstrap.net/item/1524925-acme-free-responsive
     plugins/tinymce4/inits/init_bootstrapTm4.js  
 
 
+<<<<<<< HEAD
 #### Ver2.0  (First )
+=======
+#### Ver2.0  (First ) 
+>>>>>>> origin/master
 * for CMSimple_XH (testing Ver.1.6.7)   
 * Including
  * plugin/tinymce/init/init_bootstrap.js  
