@@ -20,6 +20,10 @@ if (!defined('XH_ADM')) {
     define('XH_ADM', $adm);
 }
 
+if (!defined('TINYMCE4_VARIANT')) {
+    define('TINYMCE4_VARIANT', '');  //TinyMCE4 fully installed
+}
+
 /**
  * Returns the JS to activate the configured filebrowser.
  *
@@ -30,6 +34,8 @@ function tinymce4_filebrowser()
     global $cf, $edit;
 
     if (!(XH_ADM && $edit)) {   // no filebrowser, if editor is called from front-end
+//    if (!(XH_ADM)) {   // no filebrowser, if editor is called from front-end
+        $_SESSION['tinymce_fb_callback'] = ''; // ADD THIS LINE - suppress filebrowsercall
         return '';
     }
 
@@ -253,9 +259,10 @@ function tinymce4_config($xh_editor, $config, $selector)
     
     $temp = str_replace(
         '"%FILEBROWSER_CALLBACK%"', 
-        $xh_editor ? 
-        $_SESSION['tinymce_fb_callback'] : 
-        '""', 
+//        $xh_editor ? 
+//        $_SESSION['tinymce_fb_callback'] : 
+//        '""', 
+        $_SESSION['tinymce_fb_callback'],
         $temp
     );
 

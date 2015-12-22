@@ -39,10 +39,11 @@ EOT
         );
     }
 }
-
-define('TINYMCE4_VARIANT', '');  //TinyMCE4 fully installed
-//define('TINYMCE4_VARIANT', 'CDN');  //TinyMCE4 externally loaded
-//define('TINYMCE4_VARIANT', 'jQuery');  //TinyMCE4 jQuery Version not yet realized
+if (!defined('TINYMCE4_VARIANT')) {
+	define('TINYMCE4_VARIANT', '');  //TinyMCE4 fully installed
+	//define('TINYMCE4_VARIANT', 'CDN');  //TinyMCE4 externally loaded
+	//define('TINYMCE4_VARIANT', 'jQuery');  //TinyMCE4 jQuery Version not yet realized
+}
 
 $plugin_cf['tinymce4']['CDN_src'] 
     = '//tinymce.cachefly.net/'.tinymce4GetCdnVersion().'/tinymce.min.js';
@@ -59,6 +60,8 @@ $plugin_cf['tinymce4']['CDN_host']
  */
 function tinymce4GetCdnVersion()
 {
+    return " "; //Add 2015/12
+
     global $plugin_cf;
     $std = '4.0';
     if ($plugin_cf['tinymce4']['CDN_version'] == 'latest') {
