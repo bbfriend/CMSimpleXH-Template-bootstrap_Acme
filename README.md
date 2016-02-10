@@ -56,10 +56,7 @@ ex.
   IF you lost "login Link" , Direct Access http://your cmsimle/&login
 
 ### has been found Failure :cry:
-* Unstable operation of the Admin menu  
-* Pagemanager(jstree): dnd(Drag & drop) is Shifts image.  
-   CMSimple_XH is is not consider "position:relative"  
-* tinymce: Fullscree don't work.  
+* tinymce: Fullscree don't work,faulty.  
 
 
 Forum : http://cmsimpleforum.com/viewtopic.php?f=13&t=9347
