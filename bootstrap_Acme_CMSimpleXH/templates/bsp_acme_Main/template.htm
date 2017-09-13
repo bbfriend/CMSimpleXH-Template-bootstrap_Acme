@@ -286,10 +286,6 @@ EOM;
     <!--small footer end-->
 
     <!-- js placed at the end of the document so the pages load faster -->
-<?php if(!$adm){ ?>
-    <script src="<?php echo $pth['folder']['template']?>js/jquery-1.8.3.min.js">
-    </script>
-<?php } ?>
     <script src="<?php echo $pth['folder']['template']?>js/bootstrap.min.js">
     </script>
     <script type="text/javascript" src="<?php echo $pth['folder']['template']?>js/hover-dropdown.js">
@@ -299,9 +295,6 @@ EOM;
 
     <script type="text/javascript" src="<?php echo $pth['folder']['template']?>assets/bxslider/jquery.bxslider.js">
     </script>
-    <script defer src="<?php echo $pth['folder']['template']?>js/jquery.flexslider.js">
-    </script>
-
     <script src="<?php echo $pth['folder']['template']?>js/jquery.easing.min.js">
     </script>
     <script src="<?php echo $pth['folder']['template']?>js/link-hover.js">
@@ -377,17 +370,6 @@ EOM;
       }
                     );
 
-      $(window).load(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-          start: function(slider) {
-            $('body').removeClass('loading');
-          }
-        }
-                                   );
-      }
-                    );
-
       $(document).ready(function() {
 
         $("#owl-demo").owlCarousel({
@@ -397,9 +379,6 @@ EOM;
 
       }
                        );
-
-
-
 
       $(window).scroll(function() {
         $('#skillz').each(function(){
