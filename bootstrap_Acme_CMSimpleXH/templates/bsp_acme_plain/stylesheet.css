@@ -10,7 +10,7 @@ Main Theme : bsp_acme_Main
 @import url("../bsp_acme_Main/css/bootstrap-reset.css");
 /* external css */
 @import url("../bsp_acme_Main/assets/font-awesome/css/font-awesome.css");
-@import url("../bsp_acme_Main/css/flexslider.css");
+
 @import url("../bsp_acme_Main/assets/bxslider/jquery.bxslider.css");
 @import url("../bsp_acme_Main/css/animate.css");
 @import url("../bsp_acme_Main/assets/owlcarousel/owl.carousel.css");

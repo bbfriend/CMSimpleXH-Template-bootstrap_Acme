@@ -362,20 +362,7 @@ ul.dropdown-menu { border: none }
     margin: 20px 0 0 0;
     position: relative;
 }
-ul.about-flex-slides { margin-left: 0 }
-.flex-direction-nav {
-    position: absolute;
-    right: 10px;
-    top: 30px;
-    width: 70px;
-}
-.flex-direction-nav li {
-    display: inline-block;
-    width: 12px;
-}
-.flex-direction-nav li a { outline: none }
-.flex-direction-nav li a i { color: #cccccc }
-.flex-control-paging { display: none }
+
 .about-carousel { margin-top: 8px }
 .about-testimonial .about-testimonial-image {
     float: left;
@@ -389,10 +376,7 @@ ul.about-flex-slides { margin-left: 0 }
     height: 100px !important;
     width: 100px !important;
 }
-.about-flexslider .about-flex-slides img {
-    display: block;
-    width: 100%;
-}
+
 .about-testimonial a.about-testimonial-author {
     display: inline-block;
     font-size: 15px;
@@ -980,10 +964,7 @@ section.contact-infos {
     margin-bottom: 15px;
 }
 .progress { background-color: #E1E1E1 }
-.flexslider {
-    background: none;
-    border: none;
-}
+
 .about-skill-meter .sr-only { position: static !important }
 .about-skill-meter .progress-bar {
     background-color: #e1e1e1;

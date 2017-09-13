@@ -404,15 +404,9 @@ if($adm && $edit){
     <!-- js placed at the end of the document so the pages load faster
 <script src="js/jquery.js">
 </script>-->
-<?php if(!$adm){ ?>
-     <script src="<?php echo $bootstrap_main_folder?>js/jquery-1.8.3.min.js"> 
-    </script>
-<?php } ?>
     <script src="<?php echo $bootstrap_main_folder?>js/bootstrap.min.js">
     </script>
     <script type="text/javascript" src="<?php echo $bootstrap_main_folder?>js/hover-dropdown.js">
-    </script>
-    <script defer src="<?php echo $bootstrap_main_folder?>js/jquery.flexslider.js">
     </script>
     <script type="text/javascript" src="<?php echo $bootstrap_main_folder?>assets/bxslider/jquery.bxslider.js">
     </script>
@@ -500,14 +494,6 @@ if($adm && $edit){
     <script>
       $('a.info').tooltip();
 
-      $(window).load(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-          start: function(slider) {
-            $('body').removeClass('loading');
-          }
-        });
-      });
 
       $(document).ready(function() {
 
